@@ -57,5 +57,5 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - uses: Azure/webapps-deploy@v2
         with:
-          app-name: ${{env.targetName}}
+          app-name: ${{env.targetEnv}}
           images: ${{secrets.ACR_LOGIN_SERVER}}/wth/dotnetcoreapp:${{env.tag}}
