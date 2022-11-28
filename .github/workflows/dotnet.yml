@@ -8,7 +8,7 @@ env:
   repositoryName: wth/dotnetcoreapp
   dockerFolderPath: ./Application/src/RazorPagesTestSample
   tag: ${{github.run_number}}
-  targetEnv: tbl06devops-test
+  targetEnv: tbl06devops-prod
 
 on:
   push:
