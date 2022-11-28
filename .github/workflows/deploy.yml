@@ -1,0 +1,5 @@
+name: Challenge 3 IaC
+run-name: IaC is running 
+on: workflow_dispatch
+
+wth06-iac
