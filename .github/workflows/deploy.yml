@@ -2,7 +2,7 @@ name: Challenge 3 IaC
 run-name: IaC is running 
 on: workflow_dispatch
 env:
-  targetEnv: tbl06devops-test
+  targetEnv: tbl06devops-prod
 
 jobs:
   Build-and-deploy-infra:  
