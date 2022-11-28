@@ -1,6 +1,8 @@
 name: Challenge 3 IaC
 run-name: IaC is running 
 on: workflow_dispatch
+env:
+  targetEnv: tbl06devops-test
 
 jobs:
   Build-and-deploy-infra:  
@@ -24,3 +26,5 @@ jobs:
 
       # output containerName variable from template
     - run: echo ${{ steps.deploy.outputs.containerName }}
+    
+    
