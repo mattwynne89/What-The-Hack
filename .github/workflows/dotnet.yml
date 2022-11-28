@@ -53,5 +53,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: Azure/webapps-deploy@v2
-        app-name: ${{env.targetName}}
-        images: ${{secrets.ACR_LOGIN_SERVER}}/wth/dotnetcoreapp:4
+        with:
+          app-name: ${{env.targetName}}
+          images: ${{secrets.ACR_LOGIN_SERVER}}/wth/dotnetcoreapp:4
