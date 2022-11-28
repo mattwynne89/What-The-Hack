@@ -8,7 +8,7 @@ env:
   repositoryName: wth/dotnetcoreapp
   dockerFolderPath: ./Application/src/RazorPagesTestSample
   tag: ${{github.run_number}}
-  targetEnv: tbl06devops-dev
+  targetEnv: tbl06devops-test
 
 on:
   push:
@@ -51,6 +51,7 @@ jobs:
 
   webapp-deploy:
     runs-on: ubuntu-latest
+    environment: Manual Approval
     steps:
       - uses: azure/login@v1
         with:
